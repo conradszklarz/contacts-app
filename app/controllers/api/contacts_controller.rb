@@ -6,7 +6,7 @@ class Api::ContactsController < ApplicationController
 
   def show
     contact_id = params["id"]
-    @contact = Contact.find(recipe_id)
+    @contact = Contact.find(contact_id)
     render 'show.json.jbuilder'
   end
 
