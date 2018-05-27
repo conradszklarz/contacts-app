@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'user_token' => 'user_token#create'
+  
   namespace :api do
    get '/contacts' => 'contacts#index'
    get '/contacts/:id' => 'contacts#show'
